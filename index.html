@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Road to Fitness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+function showOnScroll() {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    elements.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+            el.classList.add('show');
+        }
+    });
+}
+
+window.addEventListener('scroll', showOnScroll);
+</script>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="hero">
+
+        <h1>Road to Fitness</h1>
+        <p>Your Road to a Healthier, Stronger You</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Programs</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section>
+            <h2>Welcome</h2>
+            <p>
+                Welcome to Road to Fitness. We provide personalized fitness programs,
+                workout plans, and expert advice to help you achieve your health goals.
+            </p>
+        </section>
+
+        <section>
+            <h2>Featured Programs</h2>
+
+            <div class="product">
+                <h3>Weight Loss Program</h3>
+                <p>Burn fat and stay fit with our guided workout plans.</p>
+            </div>
+
+            <div class="product">
+                <h3>Muscle Building</h3>
+                <p>Strength training programs designed to build muscle effectively.</p>
+            </div>
+
+            <div class="product">
+                <h3>Home Workouts</h3>
+                <p>No gym? No problem. Stay fit from home with our routines.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Road to Fitness. All rights reserved</p>
+    </footer>
+
+</body>
+</html>
