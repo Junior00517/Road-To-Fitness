@@ -1,0 +1,174 @@
+/* Reset deafault browser spacing*/
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#f4f4f4;;
+}
+
+/*Header*/
+header.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("images/Omar.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/*Navigation*/
+nav{
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00ff88;
+}
+
+/* Main content*/
+main{
+    padding: 20px;
+}
+
+/* Sections*/
+section {
+    background: white;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 15px;
+    max-width: 1000px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Products*/
+.product{
+    border: 1px solid cornsilk;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Footer*/
+footer{
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
+/* Program Cards */
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.card button {
+    margin: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #00cc66;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background: #00994d;
+}
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("images/omar.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+.cta {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url("images/lift.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 70px 20px;
+    margin-top: 40px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta button {
+    padding: 12px 25px;
+    background: #00cc66;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta button:hover {
+    background: #00994d;
+    transform: scale(1.1);
+}
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+/* When visible */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
