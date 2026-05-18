@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Road to Fitness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Join Road to Fitness</h1>
+        <p>Start Your Fitness Journey Today</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Programs</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="join.html">Join Road to Fitness</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section>
+
+            <h2>Register for a Program</h2>
+
+            <p>
+                Fill in the form below and choose the fitness program
+                that best matches your goals.
+            </p>
+
+            <!-- Signup Form -->
+            <form>
+
+                <label for="fullname">Full Name</label>
+                <input 
+                    type="text" 
+                    id="fullname" 
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+                <label for="program">Select Program</label>
+                <select id="program" name="program" required>
+
+                    <option value="">Choose a program</option>
+
+                    <option value="weight-loss">
+                        Weight Loss Program
+                    </option>
+
+                    <option value="muscle-building">
+                        Muscle Building
+                    </option>
+
+                    <option value="home-workouts">
+                        Home Workouts
+                    </option>
+
+                    <option value="cardio">
+                        Cardio & Endurance
+                    </option>
+
+                </select>
+
+                <label for="goals">Fitness Goals</label>
+
+                <textarea 
+                    id="goals" 
+                    name="goals"
+                    rows="5"
+                    placeholder="Tell us about your fitness goals..."
+                ></textarea>
+
+                <button type="submit" class="btn">
+                    Join Now
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Road to Fitness. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
