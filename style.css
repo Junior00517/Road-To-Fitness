@@ -1,23 +1,31 @@
-/* Reset deafault browser spacing*/
-body{
+/* Reset default browser spacing */
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color:#f4f4f4;;
+    background-color: #f4f4f4;
 }
 
-/*Header*/
-header.hero {
+/* Hero Header */
+.hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
                 url("images/Omar.jpg");
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
 }
 
-/*Navigation*/
-nav{
+/* Normal Header */
+header {
+    background-color: #23dec5;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
     background-color: black;
     padding: 15px;
     text-align: center;
@@ -35,12 +43,12 @@ nav a:hover {
     color: #00ff88;
 }
 
-/* Main content*/
-main{
+/* Main content */
+main {
     padding: 20px;
 }
 
-/* Sections*/
+/* Sections */
 section {
     background: white;
     padding: 25px;
@@ -50,28 +58,6 @@ section {
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
-/* Products*/
-.product{
-    border: 1px solid cornsilk;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-    .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Footer*/
-footer{
-    background-color: black;
-    color: antiquewhite;
-    text-align: center;
-    padding: 10px;
-}
 /* Program Cards */
 .card-container {
     display: flex;
@@ -92,22 +78,18 @@ footer{
 
 .card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
 }
 
 .card h3 {
-    margin: 10px 0;
+    margin: 15px 0 10px;
 }
 
 .card p {
-    padding: 0 10px 15px;
+    padding: 0 15px 15px;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
 .card button {
     margin: 15px;
     padding: 10px 20px;
@@ -122,15 +104,13 @@ footer{
 .card button:hover {
     background: #00994d;
 }
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url("images/omar.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
+
+/* Call To Action Section */
 .cta {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                 url("images/lift.jpg");
@@ -167,6 +147,7 @@ footer{
     background: #00994d;
     transform: scale(1.1);
 }
+
 /* Fade-in animation */
 .fade-in {
     opacity: 0;
@@ -174,8 +155,15 @@ footer{
     transition: all 0.8s ease;
 }
 
-/* When visible */
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
 }
