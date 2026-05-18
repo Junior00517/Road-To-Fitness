@@ -8,7 +8,7 @@ body {
 /* Hero Header */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url(Omar.JPG");
+                url(Omar.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -113,7 +113,7 @@ section {
 /* Call To Action Section */
 .cta {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url("lift.JPG");
+                url("lift.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
